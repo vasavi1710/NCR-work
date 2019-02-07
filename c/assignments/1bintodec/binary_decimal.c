@@ -28,14 +28,15 @@ int bin_decimal(int b)
 }
 int dec_binary(int c)
 {
-	int b=0;
+	int b=0,i=1;
 	while (c > 0)
 	{
 		int k;
 		while (c > 0)
 		{
 			k = c % 2;
-			b = (b * 10) + (k);
+			b = (b ) + (k*i);
+			i = i * 10;
 			c = c / 2;
 		}
 	}
