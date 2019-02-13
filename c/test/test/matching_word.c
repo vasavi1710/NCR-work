@@ -18,10 +18,12 @@ void matching_word()
 	_strrev(temp);
 	printf("%s",temp);
 	int i = 0;
+	 char prev = ' ';
 	while (!feof(f))
 	{
 
 		ch = fgetc(f);
+		prev = ch;
 		if (ch == word[i] )
 		{
 			ch=fgetc(f);
@@ -33,34 +35,14 @@ void matching_word()
 				
 				i++;
 			}
-			
+		}/*
+		if (i != k)
+		{
+			ch = prev;
+			fputc(ch, WP);
 		}
-		
-	//	ch=fgetc(f);
+		else*/
 		fputc(ch, WP);
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
