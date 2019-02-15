@@ -17,7 +17,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4arith_op_inline", "4arith_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7matrix_vector_mul", "7matrix_vector_mul\7matrix_vector_mul.vcxproj", "{8236241D-D648-4815-A53D-8AF7BC6D4143}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8distance", "8distance\8distance.vcxproj", "{C20E16A5-C790-4F84-AD48-F548216256F4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5distance", "8distance\8distance.vcxproj", "{C20E16A5-C790-4F84-AD48-F548216256F4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8employee", "8employee\8employee.vcxproj", "{EF3023D2-28E0-45C9-9965-D6E996D69C76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,14 @@ Global
 		{C20E16A5-C790-4F84-AD48-F548216256F4}.Release|x64.Build.0 = Release|x64
 		{C20E16A5-C790-4F84-AD48-F548216256F4}.Release|x86.ActiveCfg = Release|Win32
 		{C20E16A5-C790-4F84-AD48-F548216256F4}.Release|x86.Build.0 = Release|Win32
+		{EF3023D2-28E0-45C9-9965-D6E996D69C76}.Debug|x64.ActiveCfg = Debug|x64
+		{EF3023D2-28E0-45C9-9965-D6E996D69C76}.Debug|x64.Build.0 = Debug|x64
+		{EF3023D2-28E0-45C9-9965-D6E996D69C76}.Debug|x86.ActiveCfg = Debug|Win32
+		{EF3023D2-28E0-45C9-9965-D6E996D69C76}.Debug|x86.Build.0 = Debug|Win32
+		{EF3023D2-28E0-45C9-9965-D6E996D69C76}.Release|x64.ActiveCfg = Release|x64
+		{EF3023D2-28E0-45C9-9965-D6E996D69C76}.Release|x64.Build.0 = Release|x64
+		{EF3023D2-28E0-45C9-9965-D6E996D69C76}.Release|x86.ActiveCfg = Release|Win32
+		{EF3023D2-28E0-45C9-9965-D6E996D69C76}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
