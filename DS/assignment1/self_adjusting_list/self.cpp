@@ -65,17 +65,22 @@ public:
 				struct node *cur, *temp;
 				cur = new node;
 				cur = start;
-				while (cur->next != NULL &&cur->next->data != ele)
-					cur = cur->next;
-				if (cur->next != NULL)//ELEMENT FOUND
-				{
-					temp = cur->next;
-					cur->next = temp->next;
-					temp->next = start;
-					start = temp;
-				}
+				if (start->data == ele)
+					cout << "already self adjusted";
 				else
-					cout << "element not found";
+				{
+					while (cur->next != NULL &&cur->next->data != ele)
+						cur = cur->next;
+					if (cur->next != NULL)//ELEMENT FOUND
+					{
+						temp = cur->next;
+						cur->next = temp->next;
+						temp->next = start;
+						start = temp;
+					}
+					else
+						cout << "element not found";
+				}
 			}
 
 		}
