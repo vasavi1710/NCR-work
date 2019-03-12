@@ -1,5 +1,8 @@
 #include"header.h"
-float add(float a, float b)
+#include<stdio.h>
+extern float operand1, operand2;
+float add()
 {
-	return a + b;
+	float sum = operand1 + operand2;
+	return sum;
 }

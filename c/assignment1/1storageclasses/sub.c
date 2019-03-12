@@ -1,5 +1,7 @@
 #include"header.h"
-float sub(float a, float b)
+#include<stdio.h>
+extern float operand1, operand2;
+float sub()
 {
-	return a - b;
+	return operand1 - operand2;
 }

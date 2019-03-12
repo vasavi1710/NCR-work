@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 int main()
 {
 	char s1[100];
-	printf("enter a string to expand");
+	printf("enter a string to expand\n");
 	scanf_s("%s", s1);
 	int size = strlen(s1);
 	char ch, prev;

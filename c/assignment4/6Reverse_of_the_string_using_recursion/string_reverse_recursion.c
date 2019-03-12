@@ -6,7 +6,7 @@ int main()
 {
 	char a[100];
 	printf("enter a string to reverse");
-	scanf_s("%s", a);
+	scanf("%s", a);
 	reverse(a,0,strlen(a)-1);
 
 	printf("%s", a);

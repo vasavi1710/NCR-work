@@ -1,5 +1,10 @@
 #include"header.h"
-float div(float a, float b)
+#include<stdio.h>
+extern float operand1, operand2;
+float div()
 {
-	return a / b;
+	if (operand2 != 0 && operand1 != 0)
+		return operand1 / operand2;
+	else
+		return -1;
 }

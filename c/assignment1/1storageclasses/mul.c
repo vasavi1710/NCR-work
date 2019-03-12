@@ -1,5 +1,8 @@
 #include"header.h"
-float mul(float a, float b)
+#include<stdio.h>
+extern float operand1, operand2;
+float mul()
 {
-	return a * b;
+	return operand1 * operand2;
+
 }

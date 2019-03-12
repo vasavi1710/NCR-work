@@ -3,7 +3,7 @@ void replace(char a[]);
 int main()
 {
 	char ch[100];
-	scanf_s("%[^\n]%*c", ch);
+	scanf("%[^\n]%*c", ch);
 
 	replace(ch);
 		getch();

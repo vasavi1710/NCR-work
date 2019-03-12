@@ -13,7 +13,7 @@ int main()
 	for (i = 1; i < size; i++)
 	{
 		char temp[40];
-		strcpy(temp,  *(s + i));
+		strcpy(temp,*(s + i));
 		c = 0;
 		for (j = 0; j < strlen(temp); j++)
 		{

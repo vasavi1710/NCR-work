@@ -1,0 +1,16 @@
+Write a program to convert ANSI string to Wide character string and vice versa. Use MultiByteToWideChar and WideCharToMultiByte for conversion and IsTextUnicode for testing the results.
+Implement a program where command line arguments passed to program are read via CommandLineToArgvW.
+Write a program to print environment variables passed to the console application. Also demonstrate the usage of ExpandEnvironmentStrings API. 
+Write a program to open an existing file with CreateFile and use ReadFile to read the contents of file till EOF and print the contents to console.
+Write a program to create a new file with CreateFile and use WriteFile to write text to file. Verify the written text by manually opening file in notepad/wordpad etc.
+Write a program which uses the API “CreateProcess” to create two child processes (say calc.exe and notepad.exe). Print handle and process Id of each child process. 
+Create a named event object with CreateEvent. Verify the presence of the created mutex with WinObj (Hint: Run WinObj as Administrator and Look for event in path similar to: \ > Sessions > * > BaseNamedObjects. * can be integer). Also verify how kernel object is deleted when no longer used.
+Write a program to create a process using CreateProcess API.
+Write a program to create a child process. Use GetCurrentProcessId, GetCurrentThreadId, GetProcessId, GetThreadId, GetProcessIdOfThread to print process and thread information in each of the process.
+Implement two programs say program1 and program2. Open a file from within program1 and execute the program2 as a child process of program1 using CreateProcess. Pass the handle of the opened file in process1 to process2 by using lpCommandLine parameter of CreateProcess API. Collect the handle of file in process2 (this will be in the argv[]) and write data to the file from within proces2.
+Write a program to create child process which inherits handle of the object created in the parent process. This can be done via setting SECURITY_ATTRIBUTES structures lpSecurityDescriptor parameter when creating object and CreateProcess’s bInheritHandles parameter when creating child process.
+Write a program to create a thread via CreateThread API. Print some msg in the thread function.
+Write a program to create a thread in suspended state. Resume the thread after 5 seconds wait. The thread should print integers from 1 to 1000 and return normally.
+Write a program to create a thread and wait for thread using WaitForSingleObject. Terminate thread via ExitThread. Print the exit code of the thread via GetExitCodeThread.
+Write a program to create a thread and wait thread using WaitForSingleObject. Terminate thread via TerminateThread. Print the exit code of the thread via GetExitCodeThread.
+Write a program to create a child process with HIGH priority class. Change the priority of child process to BELOW_NORMAL from within child process. Also create a thread within the child process with LOWEST relative priority. Verify the results with Process Explorer from Sysinternals. [Hint: use two program scenero as used in question 10].

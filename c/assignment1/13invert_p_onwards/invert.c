@@ -1,62 +1,62 @@
 #include<stdio.h>
 void main()
 {
-	int X, P, N, RESULT;
+	int x, p, n, result;
 	int invert(int, int, int);
 
-	printf("ENTER ANY INTEGER TO INVERT (X) : \n");
-	scanf_s("%d", &X);
-	printf("ENTER THE START POSITION TO INVERT (P) :\n");
-	scanf_s("%d", &P);
-	printf("ENTER THE LENGTH TO INVERT (N) :\n");
-	scanf_s("%d", &N);
-	printf("CONVERTED BINARY VALUE OF %d IS \t", X);
-	RESULT = invert(X, P, N);
-	printf("\nINVERTED INTEGER IN DECIMAL FORM IS \t%d", RESULT);
+	printf("enter any integer to invert (x) : \n");
+	scanf_s("%d", &x);
+	printf("enter the start position to invert (p) :\n");
+	scanf_s("%d", &p);
+	printf("enter the length to invert (n) :\n");
+	scanf_s("%d", &n);
+	printf("converted binary value of %d is \t", x);
+	result = invert(x, p, n);
+	printf("\ninverted integer in decimal form is \t%d", result);
 	getch();
 }
 
-int invert(int X, int P, int N)
+int invert(int x, int p, int n)
 {
-	int I, Y, LIMIT, LEN, BIN[15];
-	LEN = 0;
-	while (X>0)
+	int i, y, limit, len, bin[15];
+	len = 0;
+	while (x>0)
 	{
-		BIN[LEN] = X % 2;
-		X = X / 2;
-		LEN++;
+		bin[len] = x % 2;
+		x = x / 2;
+		len++;
 	};
 
-	for (I = LEN - 1; I>-1; I--)
+	for (i = len - 1; i>-1; i--)
 	{
-		printf("%d ", BIN[I]);
+		printf("%d ", bin[i]);
 	}
 	printf("\n");
-	LIMIT = P + N;
-	if (LIMIT < LEN)
+	limit = p + n;
+	if (limit < len)
 	{
-		for (I = P - 1; I<P + N - 1; I++)
+		for (i = p - 1; i<p + n - 1; i++)
 		{
-			if (BIN[I] == 0)
-				BIN[I] = 1;
+			if (bin[i] == 0)
+				bin[i] = 1;
 			else
-				BIN[I] = 0;
+				bin[i] = 0;
 		}
 	}
 	else
 	{
-		printf("YOU HAVE ENTERED LARGE VALUE FOR P AND N");
+		printf("you have entered large value for p and n");
 	}
 
-	printf("INVERTED INTEGER IN BINARY FORM IS \t");
-	for (I = LEN - 1; I>-1; I--)
+	printf("inverted integer in binary form is \t");
+	for (i = len - 1; i>-1; i--)
 	{
-		printf("%d ", BIN[I]);
+		printf("%d ", bin[i]);
 	}
-	Y = 0;
-	for (I = LEN - 1; I >= 0; I--)
+	y = 0;
+	for (i = len - 1; i >= 0; i--)
 	{
-		Y = Y * 2 + BIN[I];
+		y = y * 2 + bin[i];
 	}
-	return Y;
+	return y;
 }
